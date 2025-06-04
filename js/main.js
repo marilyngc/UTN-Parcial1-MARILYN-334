@@ -296,11 +296,24 @@ function vaciarCarrito() {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
     }
 
+   // Aui reiniciamos todo en 0
+    const precioTotal = document.getElementById("precio-total");
+    if (precioTotal) {
+        precioTotal.textContent = "$0";
+        }
+    
+    
+    const cantidadTotal = document.getElementById("cantidad-total");
+    if (cantidadTotal) {
+        cantidadTotal.textContent = "0";
+    }
     alert("El carrito ha sido vaciado.");
 
     localStorage.removeItem('carrito');  // Limpiar localStorage
     // Muestra el boton
     actualizarBotonVaciar();
+
+
 }
 
 
