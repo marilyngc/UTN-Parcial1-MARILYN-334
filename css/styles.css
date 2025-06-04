@@ -1,0 +1,315 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+header {
+
+  padding: 10px 20px;
+}
+
+header
+{
+    display: flex;
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+
+header > a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: white;
+}
+
+.barra-busqueda {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  width: 250px;
+}
+
+.carrito {
+  font-size: 1rem;
+}
+
+
+
+/* Seccion productos */
+.seccion-productos {
+  padding: 20px;
+}
+
+.card-producto {
+  border: 1px solid #ccc;
+
+}
+
+.card-producto img {
+  width: 130px;
+  border-radius: 5px;
+  height: 115px;
+}
+
+.card-producto h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.card-producto p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-producto button:hover {
+  background-color: #218838;
+}
+
+
+
+/* Seccion carrito */
+.seccion-carrito {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ccc;
+  
+}
+
+#items-carrito {
+  padding: 10px 0;
+  list-style-type: none;
+}
+
+.nombre-item, .info-carrito {
+  font-size: 20px;
+}
+
+.boton-eliminar {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.total-carrito {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+
+
+/* INICIO DEL CSS */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+#listado-productos
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.li-producto
+{
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(199, 199, 199);
+    
+    padding: 15px;
+    width: 250px;
+    min-height: 200px;
+    margin: 15px;
+    list-style: none;
+}
+
+.img-producto
+{
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.nombre-producto
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+}
+
+.precio-producto
+{
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+  
+}
+
+.boton-agregar {
+  background-color: #4CAF50; 
+  color: white;              
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;     
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-agregar:hover {
+  background-color: #45a049; 
+}
+
+
+
+
+/*    SECCIÒN DE BOTONES CATEGORIA  */
+.seccion-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#seccion-categorias button {
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#seccion-categorias button:hover {
+  background-color: #45a049;
+}
+
+
+/*    SECCIÒN DE BOTONES ORDENAMIENTO  */
+#seccion-ordenamiento button {
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+#seccion-ordenamiento button:hover {
+  background-color: palevioletred;
+}
+
+/*  ESTILO DEL CARRITO*/
+.item-carrito {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.img-producto-carrito {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.detalle-producto {
+  flex: 1;
+}
+
+.titulo-producto {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.precio-anterior {
+  text-decoration: line-through;
+  color: #999;
+  margin: 5px 0 0;
+  font-size: 13px;
+}
+
+.precio-actual {
+  color: #d30068;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.cantidad-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+}
+
+.btn-cantidad {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #d30068;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.cantidad {
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.precio-total {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-left: 15px;
+}
+
+.eliminar-item {
+  margin-left: 10px;
+}
+
+.btn-eliminar {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #d30068;
+  cursor: pointer;
+}

@@ -67,7 +67,7 @@ Implementar una función de filtro, que se dispare al escribir en un campo input
 ### Ejercicio 6 _____________   1 punto
 - Almacena los productos del carrito en `localStorage`.
 - Los productos en el localStorage deben estar además con los últimos cambios de carrito y los productos que se hayan eliminado del carrito
-- Si existen productos previamente en el localStorage, deben poder verse cuando se cargue la pagina
+- Si existen productos previamente en el localStorage, deben poder verse cuando se cargue la pagina✅
 
 
 ### Ejercicio 7 _____________   1 punto
@@ -78,7 +78,7 @@ Implementar una función de filtro, que se dispare al escribir en un campo input
 
 ### Ejercicio 8 _____________   1 punto
 - Crea dos botones en línea con el título de sección productos.
-- Implementa la funcionalidad para ordenar los productos en estos dos botones. Un boton debe ordenar por nombre los productos y el otro por precio de menor a mayor
+- Implementa la funcionalidad para ordenar los productos en estos dos botones. Un boton debe ordenar por nombre los productos y el otro por precio de menor a mayor✅
 
 
 ### Ejercicio 9 _____________   0.5 puntos
